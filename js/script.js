@@ -1,10 +1,24 @@
 "use strict";
 
+console.log('4' + " - object");
 
-// const category = 'toys';
+let incr = 10,
+    decr = 10;
 
-// console.log(`https://someurl.com/${category}/5`);
+// incr++;
+// decr--;
+
+console.log(incr++);
+console.log(decr--);
 
 
-const user = "Ivan";
-alert(`Привет, ${user}`);
+console.log(5%2);
+
+console.log(2*4 == 8);
+
+const isChecked = true,
+        isClosed = false;
+console.log(isChecked || !isClosed);
+
+
+
