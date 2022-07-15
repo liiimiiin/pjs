@@ -1,3 +1,6 @@
+'use strict';
+
+
 // / УРОК
 
 
@@ -38,7 +41,7 @@ const personalMovieDB = {
 let i = 0;
 do {
     const a = prompt ("Название фильма", ""),
-        b = prompt ("Оценка", ""); 
+          b = prompt ("Оценка", ""); 
 
     if (a != null && b != null && a != '' && b != '' && a.length <50) {
         personalMovieDB.movies[a] = b;
@@ -50,11 +53,16 @@ do {
     } 
 } while (i < 2);
 
-
-
-
-
-
+if (numberOfFilms < 10) {
+    console.log("Вы посмотрелии слишком мало фмльмов");
+} else if (numberOfFilms >= 10 && numberOfFilms < 30) {
+    console.log("вы классический звритель");
+} else if (numberOfFilms >= 30) {
+    console.log("вы киноман");
+} else {
+    console.log("error");
+}
+console.log(personalMovieDB);
 
 // for (let i = 0; i < 2; i++) {
 //     const a = prompt ("One of have watched movie", ""),
@@ -67,16 +75,7 @@ do {
 //         i--;
 //     }    
 // }
-if (personalMovieDB.count < 10) {
-    console.log("Вы посмотрелии слишком мало фмльмов");
-} else if (personalMovieDB >= 10 && personalMovieDB < 30) {
-    console.log("вы классический звритель");
-} else if (personalMovieDB.count >= 30) {
-    console.log("вы киноман");
-} else {
-    console.log("error");
-}
-console.log(personalMovieDB);
+
 
 
 // if (4 == 9) {
